@@ -1,0 +1,40 @@
+.solution {
+  padding-bottom: 48px;
+}
+
+.solution-title {
+  margin-bottom: 10px;
+}
+
+.solution-text {
+  font-size: 14px;
+  line-height: 1.71;
+  text-align: left;
+}
+
+.solution-list {
+  display: flex;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.solution-item {
+  margin-left: 30px;
+  margin-top: 30px;
+  flex-basis: calc(100% / 4 - 30px);
+}
+
+.solution-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  background: rgba(245, 244, 250, 1);
+  margin-bottom: 30px;
+}
+
+.solution-icon {
+  height: 70px;
+  width: 70px;
+}

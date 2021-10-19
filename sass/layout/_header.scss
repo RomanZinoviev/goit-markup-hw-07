@@ -1,0 +1,80 @@
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  margin-right: 93px;
+}
+.logo-web {
+  color: #2196f3;
+}
+.header-nav {
+  font-weight: 500;
+  color: var(--title-text-color);
+  text-decoration: none;
+}
+.tel {
+  color: var(--primery-text-color);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  margin-left: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:hover,
+  &:focus {
+    color: #2196f3;
+  }
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.header-list {
+  display: flex;
+}
+
+.header-link {
+  display: inline-block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.header-item-right:not(:last-child) {
+  margin-right: 50px;
+}
+
+.mail {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.icon-mail {
+  margin-right: 10px;
+  fill: rgba(117, 117, 117, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  .tel:hover &,
+  .tel:focus & {
+    fill: #2196f3;
+  }
+}
+
+.icon-telephon {
+  margin-right: 10px;
+  fill: rgba(117, 117, 117, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  .tel:hover &,
+  .tel:focus & {
+    fill: #2196f3;
+  }
+}
