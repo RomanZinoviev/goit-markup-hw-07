@@ -6,7 +6,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background: #2f303a;
+  background: var(--secondary-background-color);
   padding-top: 200px;
   padding-bottom: 200px;
   background-image: linear-gradient(
@@ -17,23 +17,19 @@
     url("../images/herobcg.jpg");
 }
 
-.hero-title {
-  font-weight: 900;
+.hero__title {
   text-align: center;
-  font-size: 44px;
-  line-height: 1.36;
+  @include font(900, 44px, 1.36, 0.06em);
   text-transform: uppercase;
   color: var(--secondary-text-color);
   max-width: 696px;
-  letter-spacing: 0.06em;
-
   margin: 0 auto;
   margin-bottom: 30px;
 }
 
-.hero-button {
+.hero__button {
   display: block;
-  background: #2196f3;
+  background: var(--link-color);
   color: var(--secondary-text-color);
   margin: 0 auto;
   line-height: 1.87;

@@ -1,5 +1,6 @@
 @import "./utils/variables";
 @import "./utils/hidden";
+@import "./utils/mixin";
 @import "./base/reset";
 @import "./base/common";
 @import "./components/link";
@@ -11,6 +12,7 @@
 @import "./components/backdrop";
 @import "./components/modal";
 @import "./components/form";
+@import "./components/sociale-list";
 @import "./layout/header";
 @import "./layout/hero";
 @import "./layout/solution";

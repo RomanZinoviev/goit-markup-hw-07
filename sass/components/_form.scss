@@ -18,7 +18,7 @@
   padding-left: 30px;
   &:hover,
   &:focus {
-    border: 1px solid #2196f3;
+    border: 1px solid var(--link-color);
   }
 }
 
@@ -30,28 +30,20 @@
 .form-text {
   font-family: Roboto;
   font-style: normal;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 1.15;
+  @include font(700, 20px, 1.15, 0.03em);
   text-align: center;
-  letter-spacing: 0.03em;
-
-  color: #212121;
+  color: var(--title-text-color);
   margin-bottom: 5px;
 }
 
 .form-checkbox {
-  display: flex;
-  align-items: center;
+  @include flex-center();
   text-align: center;
-  justify-content: center;
 }
 
 .checkbox-label {
   margin-bottom: 30px;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  @include font(500, 14px, 1.71, 0.03em);
 }
 
 .form-textarea {
@@ -66,22 +58,17 @@
 }
 
 .form-button {
-  background: #2196f3;
+  background: var(--link-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   color: var(--primary-background-color);
   padding: 10px 55px;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.88;
+  @include font(700, 16px, 1.88, 0.06em);
   margin: 0 auto;
 
-  display: flex;
-  align-items: center;
+  @include flex-center();
   text-align: center;
-  letter-spacing: 0.06em;
-
-  color: #ffffff;
+  color: var(--secondary-text-color);
 }
 
 .form-icon {
@@ -119,14 +106,10 @@
 }
 
 .checkbox-label {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex-center();
 }
 .checkbox-field {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex-center();
   border: 2px solid black;
   border-radius: 2px;
   width: 15px;

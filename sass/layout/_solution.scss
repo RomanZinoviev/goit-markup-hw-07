@@ -2,39 +2,36 @@
   padding-bottom: 48px;
 }
 
-.solution-title {
+.solution__title {
   margin-bottom: 10px;
 }
 
-.solution-text {
-  font-size: 14px;
-  line-height: 1.71;
+.solution__text {
+  @include font(400, 14px, 1.71, 0.03em);
   text-align: left;
 }
 
-.solution-list {
+.solution__list {
   display: flex;
   margin-left: -30px;
   margin-top: -30px;
 }
 
-.solution-item {
+.solution__item {
   margin-left: 30px;
   margin-top: 30px;
   flex-basis: calc(100% / 4 - 30px);
 }
 
-.solution-div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.solution__div {
+  @include flex-center();
   width: 270px;
   height: 120px;
   background: rgba(245, 244, 250, 1);
   margin-bottom: 30px;
 }
 
-.solution-icon {
+.solution__icon {
   height: 70px;
   width: 70px;
 }
